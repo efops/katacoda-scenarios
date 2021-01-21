@@ -5,10 +5,10 @@ allow 0.0.0.0/24`
 
 If you have active firewall service, allow ntp port.
 
-`ufw allow ntp `{{execute "HOST1"}}
+`ufw allow ntp `{{execute "controlplane"}}
 
-`ufw reload`{{execute "HOST1"}}
+`ufw reload`{{execute "controlplane"}}
 
 Check if NTP server is working.
 
-`chronyc sources`{{execute "HOST1"}}
+`chronyc sources`{{execute "controlplane"}}

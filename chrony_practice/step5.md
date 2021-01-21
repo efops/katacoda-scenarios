@@ -1,11 +1,11 @@
 Set NTP synchronization.
 
-`timedatectl set-ntp true`{{execute "HOST2"}}
+`timedatectl set-ntp true`{{execute "node01"}}
 
 Start and enable the service.
 
-`systemctl enable --now chronyd`{{execute "HOST2"}}
+`systemctl enable chrony`{{execute "node01"}}
 
 Verify the setting using the following command:
 
-`chronyc sources`{{execute "HOST2"}}
+`chronyc sources`{{execute "node01"}}

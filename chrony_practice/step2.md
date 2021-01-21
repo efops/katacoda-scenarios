@@ -1,15 +1,15 @@
 ## Configuring Chrony on Ubuntu master
 
 After the installation, you can make the changes on Chrony main configuration file
-`/etc/chrony.conf`
+`/etc/chrony/chrony.conf`
 
 One main configuration change you can make is to set the time servers closest to you.
 
-`nano /etc/chrony.conf`{{execute "HOST1"}}
+`nano /etc/chrony.conf`{{execute "controlplane"}}
 
 Comment out the first pool line and add a list of NTP servers.
 
-`#pool ntp.ubuntu.com     iburst maxsources 4`
+`#pool 2.debian.pool.ntp.org offline iburst`
 
 `server 2.az.pool.ntp.org
 server 2.asia.pool.ntp.org
@@ -17,8 +17,8 @@ server 0.asia.pool.ntp.org`{{copy}}
 
 Set NTP synchronization.
 
-`timedatectl set-ntp true`{{execute "HOST1"}}
+`timedatectl set-ntp true`{{execute "controlplane"}}
 
 Restart `chronyd` service after making the change.
 
-`systemctl restart chronyd`{{execute "HOST1"}}
+`systemctl restart chronyd`{{execute "controlplane"}}
