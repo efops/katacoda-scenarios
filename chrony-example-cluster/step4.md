@@ -8,10 +8,10 @@ Set timezone.
 
 Install chrony and configure it as NTP client.
 
-`apt install -y chrony`{{execute "T2"}}
+`apt install -y chrony`{{execute "HOST2"}}
 
 Edit the configuration file to set NTP server to point your newly configured NTP server.
 
-`nano /etc/chrony/chrony.conf`{{execute "T2"}}
+`nano /etc/chrony/chrony.conf`{{execute "HOST2"}}
 
 `server 0.0.0.0`

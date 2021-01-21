@@ -5,7 +5,7 @@ After the installation, you can make the changes on Chrony main configuration fi
 
 One main configuration change you can make is to set the time servers closest to you.
 
-`nano /etc/chrony.conf`{{execute "T1"}}
+`nano /etc/chrony.conf`{{execute "HOST1"}}
 
 Comment out the first pool line and add a list of NTP servers.
 
@@ -17,8 +17,8 @@ server 0.asia.pool.ntp.org`{{copy}}
 
 Set NTP synchronization.
 
-`timedatectl set-ntp true`{{execute "T1"}}
+`timedatectl set-ntp true`{{execute "HOST1"}}
 
 Restart `chronyd` service after making the change.
 
-`systemctl restart chronyd`{{execute "T1"}}
+`systemctl restart chronyd`{{execute "HOST1"}}
