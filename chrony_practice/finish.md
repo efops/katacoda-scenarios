@@ -1,0 +1,1 @@
+That’s all. You now have NTP server working on Ubuntu server.
