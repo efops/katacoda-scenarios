@@ -4,7 +4,7 @@ Now that you have Chrony NTP Server installed and configured, you can configure 
 
 Set timezone.
 
-`timedatectl set-timezone Asia/Baku`{{execute "T2"}}
+`timedatectl set-timezone Asia/Baku`{{execute "HOST2"}}
 
 Install chrony and configure it as NTP client.
 
