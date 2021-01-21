@@ -2,12 +2,12 @@
 
 Set timezone.
 
-`timedatectl set-timezone Asia/Baku`{{execute "controlplane"}}
+`timedatectl set-timezone Asia/Baku`{{execute "T1"}}
 
 Chrony can be installed on Ubuntu from package manager.
 
-`apt install -y chrony`{{execute "controlplane"}}
+`apt install -y chrony`{{execute "T1"}}
 
 After the installation, start and enable `chronyd` service.
 
-`systemctl enable chrony`{{execute "controlplane"}}
+`systemctl enable chrony`{{execute "T1"}}
