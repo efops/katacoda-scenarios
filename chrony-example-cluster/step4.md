@@ -14,4 +14,8 @@ Edit the configuration file to set NTP server to point your newly configured NTP
 
 `nano /etc/chrony/chrony.conf`{{execute HOST2}}
 
-`server 0.0.0.0`
+`server 0.0.0.0 prefer iburst`
+
+Then restart chronyd
+
+`systemctl restart chrony`

@@ -9,3 +9,5 @@ Start and enable the service.
 Verify the setting using the following command:
 
 `chronyc sources`{{execute HOST2}}
+
+`chronyc clients`{{execute HOST1}}
