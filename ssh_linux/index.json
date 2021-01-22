@@ -1,6 +1,6 @@
 {
-  "title": "SSHD",
-  "description": "SSH Essentials: Working with SSH Servers, Clients, and Keys",
+  "title": "SSH Essentials: Working with SSH Servers, Clients, and Keys",
+  "description": "",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
@@ -81,6 +81,6 @@
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "bash-cluster2"
+    "imageid": "kubernetes-cluster-running:1.18"
   }
 }
